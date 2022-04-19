@@ -24,14 +24,14 @@ public class Car {
     }
 
     public String startEngine() {
-        return "The cars engine is starting.";
+        return "The " + getClass().getSimpleName() + " engine is starting.";
     }
 
     public String accelerate() {
-        return "The car is accelerating.";
+        return "The " + getClass().getSimpleName() + " is accelerating.";
     }
 
     public String brake() {
-        return "The car is braking.";
+        return "The "+getClass().getSimpleName() +" is braking.";
     }
 }

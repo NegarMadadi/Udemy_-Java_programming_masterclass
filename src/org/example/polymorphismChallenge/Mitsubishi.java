@@ -1,6 +1,6 @@
 package org.example.polymorphismChallenge;
 
-public class Mitsubishi extends Car{
+public class Mitsubishi extends Car {
 
     public Mitsubishi(int cylinders, String name) {
         super(cylinders, name);
@@ -9,16 +9,16 @@ public class Mitsubishi extends Car{
 
     @Override
     public String startEngine() {
-        return "Mitsubishi is starting Engine.";
+        return getClass().getSimpleName() + " is starting Engine.";
     }
 
     @Override
     public String accelerate() {
-        return "Mitsubishi is accelerating.";
+        return getClass().getSimpleName() + " is accelerating.";
     }
 
     @Override
     public String brake() {
-        return "Mitsubishi is braking.";
+        return getClass().getSimpleName() + " is braking.";
     }
 }
