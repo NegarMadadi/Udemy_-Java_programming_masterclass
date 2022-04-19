@@ -35,7 +35,7 @@ public class Printer {
     public int printPages(int pages) {
         int pagesToPrint = pages;
         if (this.duplex) {
-            pagesPrinted = (pagesToPrint / 2) + (pagesToPrint % 2);
+            pagesPrinted = (pages / 2) + (pages % 2);
             System.out.println("Printing in duplex mode.");
         }
         this.pagesPrinted += pagesToPrint;
